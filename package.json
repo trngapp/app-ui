@@ -1,0 +1,19 @@
+{
+  "name": "mage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start":"node server.js ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client":"cd app-ui && yarn start",
+    "dev":"concurrently \"nodemon server.js\" \"yarn run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.2.1",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
